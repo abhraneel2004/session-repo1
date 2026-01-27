@@ -1,0 +1,113 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Header Styles */
+header {
+    text-align: center;
+    color: white;
+    margin-bottom: 40px;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+header p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* Main Container */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Contributors Container */
+.contributors-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 25px;
+    padding: 20px;
+}
+
+/* Contributor Card Styles */
+.contributor-card {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.contributor-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+.contributor-card .name {
+    color: #667eea;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.contributor-card .place {
+    color: #555;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.contributor-card .college {
+    color: #666;
+    font-size: 1rem;
+    font-style: italic;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    color: white;
+    margin-top: 50px;
+    padding: 20px;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: #ffd700;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    
+    .contributors-container {
+        grid-template-columns: 1fr;
+    }
+}
