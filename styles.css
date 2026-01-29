@@ -111,3 +111,14 @@ footer a:hover {
         grid-template-columns: 1fr;
     }
 }
+
+
+.cardPabitra {
+    padding: 10px;
+    border: 2px solid black;
+    background-color: rgba(0, 0, 0, 0.178);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
